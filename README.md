@@ -9,14 +9,11 @@ throws error if input is:
 
 * null
 * undefined
-* non-integer (decimal)
+* non-integer (decimal, object literal, function, object instance)
 * positive integer less than 3 digits
 * negative integer less than 3 digits
 * positive integer even number of digits
 * negative integer even number of digits
-* object literal
-* function
-* object instance
 
 ### Cases
     
