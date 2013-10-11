@@ -1,0 +1,30 @@
+{
+  "name": "spawncamping-hipster",
+  "version": "0.0.1",
+  "description": "Kata to find middle 3 digits",
+  "main": "index.js",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "mocha": "~1.13.0",
+    "chai": "~1.8.1"
+  },
+  "scripts": {
+    "test": "mocha test/unit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jcapuano/spawncamping-hipster.git"
+  },
+  "keywords": [
+    "kata",
+    "module"
+  ],
+  "author": "heatmiser",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "gitHead": "1f524dd11b2b9354a8e9380d57ae3ccf6f7289d6",
+  "bugs": {
+    "url": "https://github.com/jcapuano/spawncamping-hipster/issues"
+  }
+}
