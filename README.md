@@ -3,6 +3,35 @@ spawncamping-hipster
 
 Find the middle 3 digits of a integer
 
+## Rules
+
+throws error if input is:
+    null
+    undefined
+    non-integer (decimal)
+    positive integer less than 3 digits
+    negative integer less than 3 digits
+    positive integer even number of digits
+    negative integer even number of digits
+
+### Cases
+    
+	12345       => 234
+	-12345      => 234
+	123         => 123
+	-123        => 123
+    
+	1234        => throw
+	-1234       => throw
+	12345678    => throw
+	-12345678   => throw
+	12          => throw
+	-12         => throw
+	123.45      => throw
+	-123.45     => throw
+	null        => throw
+	undefined   => throw
+    
 
 ## License 
 
