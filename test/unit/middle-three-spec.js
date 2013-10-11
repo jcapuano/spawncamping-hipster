@@ -98,4 +98,47 @@ describe('Middle Three Digits', function() {
         });
     });
     
+	describe('string integer', function() {
+        it('should error', function() {
+        	expect(function() {
+            	mt('12345');
+            }).to.throw(/invalid input/);
+        });
+    });
+    
+	describe('string text', function() {
+        it('should error', function() {
+        	expect(function() {
+            	mt('hello');
+            }).to.throw(/invalid input/);
+        });
+    });
+    
+	describe('object literal', function() {
+        it('should error', function() {
+        	expect(function() {
+            	mt({foo: 12345});
+            }).to.throw(/invalid input/);
+        });
+    });
+    
+	describe('function', function() {
+        it('should error', function() {
+        	var fn = function() {};
+        	expect(function() {
+            	mt(fn);
+            }).to.throw(/invalid input/);
+        });
+    });
+    
+	describe('instance', function() {
+        it('should error', function() {
+        	var fn = function() {};
+            var instance = new fn();
+        	expect(function() {
+            	mt(instance);
+            }).to.throw(/invalid input/);
+        });
+    });
+    
 });

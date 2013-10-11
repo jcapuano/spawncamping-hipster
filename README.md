@@ -14,6 +14,9 @@ throws error if input is:
 * negative integer less than 3 digits
 * positive integer even number of digits
 * negative integer even number of digits
+* object literal
+* function
+* object instance
 
 ### Cases
     
@@ -31,6 +34,8 @@ throws error if input is:
 * -123.45     => throw
 * null        => throw
 * undefined   => throw
+* {foo: 12345} => throw
+* function(){} => throw
     
 
 ## License 
